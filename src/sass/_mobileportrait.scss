@@ -1,0 +1,27 @@
+@media screen and (orientation: portrait) and (max-width: 321px) {
+  body {
+    .container {        
+      header{
+        height: 60px;
+        .header-logo {
+          flex-grow: 5;
+          .gatsby-image-wrapper{
+            max-height: 55px;
+          }
+        }
+        .header-title {
+          display: none;
+        }
+        .header-menu {
+          flex-grow: 1;          
+        }
+      }
+
+      .wrapper {
+        main {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

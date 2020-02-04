@@ -1,0 +1,17 @@
+header.trident-starter{
+    display: flex;
+    flex-direction: row;
+    background: #506d98;
+}
+.header-logo{
+    order:0
+}
+.header-title{
+    order:1;
+}
+.header-menu{
+    order:2;
+}
+/*
+
+*/

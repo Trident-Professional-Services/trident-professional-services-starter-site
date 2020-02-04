@@ -1,0 +1,10 @@
+footer.trident-starter{
+    font-size: x-small;
+    text-align: center;
+}
+@media screen and (max-width:767px){
+    footer.trident-starter{
+        display: none;
+    }
+}
+
