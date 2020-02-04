@@ -6,6 +6,11 @@ body {
         nav {
           color: $color-secondary-1-4;
           padding: 0.8em;
+          a.burger-menu-button {
+            position: absolute;
+            z-index: 2;
+            top: 16px;
+          }
           ul.menu {
             padding: 0.8em;
             list-style: none;
@@ -61,14 +66,19 @@ body {
               display: none;
             }
             ul.mobile-menu {
-              display: flex;
-              flex-direction: column;
+              margin: 0;
               background-color: $color-secondary-1-0;
               list-style: none;
-              position: fixed;
+              position: absolute;
               top: 0;
+              left: calc(100% - 118px);
+              padding: 32px 24px 32px 4px;
+              width: 90px;
+              height: 100%;
+              z-index: 1;
+              animation: 2s slidein;
               li {
-                flex-grow: 1;
+                margin: 0.5em 1em;
                 a {
                   color: $color-secondary-2-0;
                   text-decoration: none;
@@ -87,3 +97,4 @@ body {
     }
   }
 }
+
