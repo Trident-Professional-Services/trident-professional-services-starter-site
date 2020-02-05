@@ -22,40 +22,45 @@ body {
           padding: 0;
           position: relative;
           main {
-            display: block;    
+            display: block;
             text-align: justify;
             padding: 16px;
             word-wrap: normal;
             word-break: normal;
-            article.contact{
+            article.contact {
               display: flex;
               flex-direction: row;
-              width:90%;
+              width: 90%;
               margin: 0 auto;
-              .profile-image{
-                .caption{
-                  color:$color-complement-2;
+              .profile-image {
+                .caption {
+                  color: $color-complement-2;
                   font-size: small;
                 }
               }
-              .social{
+              .social {
+                display: flex;
+                flex-direction: column;
                 font-size: large;
                 padding: 20px;
                 text-align: center;
                 vertical-align: center;
+                a {
+                  flex-grow: 1;
+                }
               }
             }
-            .emphasis{
+            .emphasis {
               color: $color-complement-1;
               font-size: larger;
               font-weight: bolder;
               font-style: italic;
             }
-            a{
+            a {
               color: $color-complement-0;
               font-weight: bold;
             }
-            a:visited{
+            a:visited {
               color: $color-complement-3;
             }
             h1,
