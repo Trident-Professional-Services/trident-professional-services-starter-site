@@ -36,7 +36,7 @@ const Layout = (props: ILayoutProps) => {
         <div className={"wrapper"}>
           <main>{children}</main>
         </div>
-        <footer className="trident-starter">
+        <footer>
           © {new Date().getFullYear()} Trident Professional Services
         </footer>
       </div>

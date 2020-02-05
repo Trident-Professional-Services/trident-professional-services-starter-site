@@ -5,7 +5,15 @@ import IHeaderProps from "./IHeaderProps"
 import Menu from "./Menu"
 
 interface ILogoQuery {
-  logo: {
+  smalllogo: {
+    childImageSharp: {
+      fixed: {
+        src: string
+        srcSet: string
+      }
+    }
+  }
+  largelogo: {
     childImageSharp: {
       fixed: {
         src: string
@@ -18,9 +26,17 @@ export default function Header(props: IHeaderProps) {
   const { siteTitle } = props
   const data: ILogoQuery = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "trident-transparent-background.png" }) {
+      smalllogo: file(relativePath: { eq: "trident-transparent-background.png" }) {
         childImageSharp {
           fixed(width: 45, height: 55, pngQuality: 1) {
+            src
+            srcSet
+          }
+        }
+      }
+      largelogo: file(relativePath: { eq: "trident-transparent-background.png" }) {
+        childImageSharp {
+          fixed(width: 90, height: 110, pngQuality: 1) {
             src
             srcSet
           }
@@ -32,12 +48,23 @@ export default function Header(props: IHeaderProps) {
     <header>
       <div className="header-logo">
         <Img
+          className={"logo-small"}
           loading={"eager"}
           resolutions={{
             height: 55,
             width: 45,
-            src: data.logo.childImageSharp.fixed.src,
-            srcSet: data.logo.childImageSharp.fixed.srcSet,
+            src: data.smalllogo.childImageSharp.fixed.src,
+            srcSet: data.smalllogo.childImageSharp.fixed.srcSet,
+          }}
+        />
+        <Img
+          className={"logo-large"}
+          loading={"eager"}
+          resolutions={{
+            height: 110,
+            width: 90,
+            src: data.largelogo.childImageSharp.fixed.src,
+            srcSet: data.smalllogo.childImageSharp.fixed.srcSet,
           }}
         />
       </div>
@@ -48,8 +75,8 @@ export default function Header(props: IHeaderProps) {
         <Menu
           items={[
             { url: "/", text: "Home" },
-            { url: "#", text: "About" },
-            {url:"#", text:"Contact"}
+            { url: "/about", text: "About" },
+            {url:"/contact", text:"Contact"}
           ]}
         />
       </div>

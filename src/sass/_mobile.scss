@@ -1,10 +1,13 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   body {
     .container {        
       header{
         height: 60px;
         .header-logo {
           flex-grow: 5;
+          .logo-large{
+            display: none !important;
+          }
           .gatsby-image-wrapper{
             max-height: 55px;
           }
@@ -18,11 +21,11 @@
       }
 
       .wrapper {
-        height: calc(100%-60px);
+        min-height: calc(100% - 60px);
         main {          
-          height: calc(100%-2px);
-          padding: 1px;
-          width: 100%;
+          min-height: calc(100% - 2px);
+          margin: 0 auto;
+          width: 80%;
         }
       }
     }

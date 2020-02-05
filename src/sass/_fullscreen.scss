@@ -1,0 +1,45 @@
+@media screen and (min-width: 1224px) {
+  body {
+    .container {
+      header {
+        height: 120px;
+        .header-logo {
+          flex-grow: 2;
+          .logo-small{
+            display: none !important;
+          }
+          .gatsby-image-wrapper {
+            max-height: 110px;
+          }
+        }
+        .header-title {
+          flex-grow: 5;
+          padding-top:40px;
+          a {
+            color: $contrast-color;
+            font-size: xx-large;
+          }
+        }
+        .header-menu {
+          font-size: x-large;
+          flex-grow: 5;
+        }
+      }
+
+      .wrapper {
+        min-height: calc(100% - 130px);
+        margin: 0;
+        main {
+          min-height: calc(100%-32px);
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 32px;
+          width: 100%;
+        }
+      }
+      footer {
+        height: 70px;
+      }
+    }
+  }
+}

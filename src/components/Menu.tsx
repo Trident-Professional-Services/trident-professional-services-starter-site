@@ -11,12 +11,15 @@ export default function Menu(props: IMenuProps): JSX.Element {
   const menuClick = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
-    event.preventDefault();
-    setShowMenu(!showMenu);
+    event.preventDefault()
+    setShowMenu(!showMenu)
   }
   return (
     <nav>
-      <a className={"burger-menu-button"} onClick={menuClick}>
+      <a
+        className={showMenu ? "close-menu-button" : "burger-menu-button"}
+        onClick={menuClick}
+      >
         <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
       </a>
       <ul className={showMenu ? "mobile-menu" : "menu"}>

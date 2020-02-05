@@ -1,10 +1,13 @@
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1223px) {
     body {
       .container {        
         header{
           height: 60px;
           .header-logo {
             flex-grow: 5;
+            .logo-large{
+              display: none !important;
+            }
             .gatsby-image-wrapper{
               max-height: 55px;
             }
@@ -23,17 +26,16 @@
         }
   
         .wrapper {
-          height: calc(100% - 180px);
+          min-height: calc(100% - 130px);
           margin: 0;
           main {
-            height: calc(100%-32px);
+            min-height: calc(100%-32px);
             margin: 0;
-            padding: 16px;
-            text-align: center;
+            padding: 32px;
             width: 100%;
           }
         }
-        footer.trident-starter{
+        footer{
           height: 70px;
         }
       }

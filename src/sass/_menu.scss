@@ -1,15 +1,26 @@
 body {
   .container {
     header {
+      .header-logo{
+        .gatsby-image-wrapper{
+          max-height: 55px;
+        }
+      }
       .header-menu {
         flex-grow: 1;
         nav {
-          color: $color-secondary-1-4;
           padding: 0.8em;
-          a.burger-menu-button {
+          a.burger-menu-button{
+            color: $color-secondary-1-4;
+          }
+          a.close-menu-button{
+            color: $color-secondary-2-0;
+          }
+          a.burger-menu-button, a.close-menu-button {
             position: absolute;
             z-index: 2;
             top: 16px;
+            left:calc(100% - 80px)
           }
           ul.menu {
             padding: 0.8em;
@@ -67,7 +78,7 @@ body {
             }
             ul.mobile-menu {
               margin: 0;
-              background-color: $color-secondary-1-0;
+              background-color: $color-secondary-1-4;
               list-style: none;
               position: absolute;
               top: 0;
@@ -79,7 +90,7 @@ body {
               animation: 2s slidein;
               li {
                 margin: 0.5em 1em;
-                a {
+                a, a:visited {
                   color: $color-secondary-2-0;
                   text-decoration: none;
                 }

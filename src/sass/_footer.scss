@@ -1,10 +1,26 @@
-footer.trident-starter{
-    font-size: x-small;
-    text-align: center;
-}
-@media screen and (max-width:767px){
-    footer.trident-starter{
-        display: none;
+body {
+  #___gatsby {
+    #gatsby-focus-wrapper {
+      .container {
+        footer {
+          font-size: x-small;
+          text-align: center;
+        }
+      }
     }
+  }
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    #___gatsby {
+      #gatsby-focus-wrapper {
+        .container {
+          footer {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

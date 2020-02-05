@@ -1,8 +1,6 @@
 body{
     color:$contrast-color;
     background-color: $color-primary-0;
+    height: 100vh;
     margin: 0;
-    .container{
-        height: 100%;
-    }
 }
