@@ -32,6 +32,18 @@ body {
               flex-direction: row;
               width:90%;
               margin: 0 auto;
+              .profile-image{
+                .caption{
+                  color:$color-complement-2;
+                  font-size: small;
+                }
+              }
+              .social{
+                font-size: large;
+                padding: 20px;
+                text-align: center;
+                vertical-align: center;
+              }
             }
             .emphasis{
               color: $color-complement-1;
