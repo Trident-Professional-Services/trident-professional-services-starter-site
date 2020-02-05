@@ -1,10 +1,11 @@
 import React from "react"
+import Emphasis from "../components/IEmphasisProps"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About" /> 
     <h1>About Us</h1>
     <p>
       Trident Professional Services' mission is to help organizations grow
@@ -32,10 +33,10 @@ const AboutPage = () => (
       <p>
         <h2>Clients spend too much time worrying about buzzwords</h2>
         IT Departments so often latch onto the latest technology or 
-        the latest buzzword and decide that "We must have <b>this</b>." 
+        the latest buzzword and decide that "We must have <Emphasis>this</Emphasis>." 
         We believe that more important than the latest sexy resume stuffer, 
-        or the sexiest AI technology, is remembering why you want that thing - 
-        <b>the problem you are solving.</b> 
+        or the sexiest AI technology, is remembering why you want that thing -{" "}
+        <Emphasis>the problem you are solving.</Emphasis> 
       </p>
       <p>
         <h2>The Light bulb moment</h2>
@@ -59,7 +60,7 @@ const AboutPage = () => (
       <p>
         <h2>What We Do and Don't do</h2>
         We don't do projects. We don't treat our consultants as interchangeable machines.
-        We do <b>products</b>. We establish long lasting relationships with our clients and
+        We do <Emphasis>products</Emphasis>. We establish long lasting relationships with our clients and
         collaborate on products to deliver clearly established value. We adopt technology: the cloud, 
         JAMStack, AI, etc only when we can clearly establish the value to our clients.
       </p>
