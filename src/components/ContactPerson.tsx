@@ -25,7 +25,7 @@ export default function ContactPerson(props: IContactPersonProps): JSX.Element {
         <a href={"mailto:" + emailAddress}><FontAwesomeIcon icon={faEnvelope} /></a>
         {telephone ? <a href={"tel:" + telephone}><FontAwesomeIcon icon={faPhone}/> </a>:undefined}
         {linkedIn ? <a href={linkedIn}><FontAwesomeIcon icon={faLinkedin}/></a> : undefined}
-        {twitter ? <a href={twitter.replace("@", "")}><FontAwesomeIcon icon={faTwitter} /></a> : undefined}
+        {twitter ? <a href={"https://twitter.com/"+ twitter.replace("@", "")}><FontAwesomeIcon icon={faTwitter} /></a> : undefined}
       </div>
     </article>
   )

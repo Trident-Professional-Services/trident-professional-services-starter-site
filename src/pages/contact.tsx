@@ -8,7 +8,7 @@ const ContactPage = () => (
     <SEO title="Contact Us" />
     <h1>Contact Us</h1>
     <ContactPerson emailAddress={"mose@gideontech.com"} name={"Mose Richardson"} title={"Principal Operations Architect"} />
-    <ContactPerson emailAddress={"idaho@tridentprofessionalservices.com"} name={"Idaho Edokpayi"} title={"Chief ProductArchitect"} />
+    <ContactPerson emailAddress={"idaho@tridentprofessionalservices.com"} name={"Idaho Edokpayi"} title={"Chief ProductArchitect"} twitter={"@whoisidaho"} />
   </Layout>
 )
 

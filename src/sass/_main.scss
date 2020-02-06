@@ -27,6 +27,15 @@ body {
             padding: 16px;
             word-wrap: normal;
             word-break: normal;
+            a.call-to-action, button.call-to-action, .call-to-action{
+              background-color: $color-complement-0;
+              border: solid 1px $color-complement-4;
+              border-radius: 5px;
+              color: $contrast-color !important;
+              font-size: xx-large;
+              padding: 10px;
+              text-decoration: none;
+            }
             article.contact {
               display: flex;
               flex-direction: row;
