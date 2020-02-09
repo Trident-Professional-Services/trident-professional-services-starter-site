@@ -1,44 +1,47 @@
 @media screen and (min-width: 769px) and (max-width: 1223px) {
-    body {
-      .container {        
-        header{
-          height: 60px;
-          .header-logo {
-            flex-grow: 5;
-            .logo-large{
-              display: none !important;
+  body {
+    #___gatsby {
+      #gatsby-focus-wrapper {
+        .container {
+          header {
+            height: 60px;
+            .header-logo {
+              flex-grow: 5;
+              .logo-large {
+                display: none !important;
+              }
+              .gatsby-image-wrapper {
+                max-height: 55px;
+              }
             }
-            .gatsby-image-wrapper{
-              max-height: 55px;
-            }
-          }
-          .header-title {
-            flex-grow: 5;
-            padding-top: 10px;
-            a{
-                color:$contrast-color;
+            .header-title {
+              flex-grow: 5;
+              padding-top: 10px;
+              a {
+                color: $contrast-color;
                 font-size: larger;
+              }
+            }
+            .header-menu {
+              flex-grow: 2;
             }
           }
-          .header-menu {
-            flex-grow: 2;          
-          }
-        }
-  
-        .wrapper {
-          min-height: calc(100% - 130px);
-          margin: 0;
-          main {
-            min-height: calc(100%-32px);
+
+          .wrapper {
+            min-height: calc(100% - 130px);
             margin: 0;
-            padding: 32px;
-            width: 100%;
+            main {
+              min-height: calc(100%-32px);
+              margin: 0;
+              padding: 32px;
+              width: 100%;
+            }
           }
-        }
-        footer{
-          height: 70px;
+          footer {
+            height: 70px;
+          }
         }
       }
     }
   }
-  
+}

@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#E6CE6F`,
         theme_color: `#1D3C6A`,
         display: `minimal-ui`,
-        icon: `src/images/trident-transparent-background.png`, // This path is relative to the root of the site.
+        icon: `src/images/trident-transparent-background-Square900px.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

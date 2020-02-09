@@ -1,9 +1,14 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import React from "react"
+import React , {useEffect} from "react"
 import IHeaderProps from "./IHeaderProps"
 import Menu from "./Menu"
+declare global{
+  interface Window{ dataLayer: []; }
+  var dataLayer: any[];
+};
 
+function gtag(...args:any[]){dataLayer.push(arguments);}
 interface ILogoQuery {
   smalllogo: {
     childImageSharp: {
@@ -47,7 +52,19 @@ export default function Header(props: IHeaderProps) {
         }
       }
     }
-  `)
+  `);
+  useEffect(()=>{
+    const googleTagManagerScript  = document.createElement("script");
+    googleTagManagerScript.src = "https://www.googletagmanager.com/gtag/js?id=UA-158051282-1";
+    googleTagManagerScript.async = true;
+    googleTagManagerScript.onload = ()=>{
+      window.dataLayer = window.dataLayer || [];      
+      gtag('js', new Date());    
+      gtag('config', 'UA-158051282-1');
+    }
+    const headElement = document.getElementsByTagName("head")[0];
+    headElement.appendChild(googleTagManagerScript);
+  }, [])
   return (
     <header>
       <div className="header-logo">

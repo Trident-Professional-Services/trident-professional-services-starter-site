@@ -1,31 +1,40 @@
 @media screen and (max-width: 768px) {
   body {
-    .container {        
-      header{
-        height: 60px;
-        .header-logo {
-          flex-grow: 5;
-          .logo-large{
-            display: none !important;
+    #___gatsby {
+      #gatsby-focus-wrapper {
+        .container {
+          header {
+            height: 60px;
+            .header-logo {
+              flex-grow: 5;
+              .logo-large {
+                display: none !important;
+              }
+              .gatsby-image-wrapper {
+                max-height: 55px;
+              }
+            }
+            .header-title {
+              display: none;
+            }
+            .header-menu {
+              flex-grow: 1;
+            }
           }
-          .gatsby-image-wrapper{
-            max-height: 55px;
-          }
-        }
-        .header-title {
-          display: none;
-        }
-        .header-menu {
-          flex-grow: 1;          
-        }
-      }
 
-      .wrapper {
-        min-height: calc(100% - 60px);
-        main {          
-          min-height: calc(100% - 2px);
-          margin: 0 auto;
-          width: 80%;
+          .wrapper {
+            min-height: calc(100% - 60px);
+            main {
+              a.call-to-action,
+              button.call-to-action,
+              .call-to-action {
+                font-size: large;
+              }
+              min-height: calc(100% - 2px);
+              margin: 0 auto;
+              width: 80%;
+            }
+          }
         }
       }
     }
