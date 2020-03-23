@@ -5,7 +5,7 @@ import IHeaderProps from "./IHeaderProps"
 import Menu from "./Menu"
 declare global{
   interface Window{ dataLayer: []; }
-  var dataLayer: any[];
+  const dataLayer: any[];
 };
 
 function gtag(...args:any[]){dataLayer.push(arguments);}
