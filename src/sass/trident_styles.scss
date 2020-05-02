@@ -1,0 +1,119 @@
+/* .navbar {margin-top: 2em;} */
+/* .navbar-nav {
+        flex-direction: row;
+    } */
+    body {
+        color: #444;
+    }
+    .navbar-brand {
+        font-size: 200%;
+    }
+    .navbar-light {
+        .navbar-nav {
+            .active {
+                >.nav-link {
+                    color: #a18720;
+                }
+            }
+            .nav-link.active {
+                color: #a18720;
+            }
+            .nav-link.show {
+                color: #a18720;
+            }
+            .show {
+                >.nav-link {
+                    color: #a18720;
+                }
+            }
+            .nav-link {
+                color: rgba(255, 125, 100, 0.5);
+            }
+        }
+        .navbar-brand {
+            color: #a18720 !important;
+        }
+        .navbar-toggler {
+            background-color: #a18720 !important;
+            float: right;
+            position: absolute;
+            right: 1em;
+        }
+    }
+    .nav-logo {
+        height: 150px;
+        float: left;
+        background-color: #fff;
+    }
+    .bg-light {
+        background-color: transparent !important;
+    }
+    .top-container {
+        background: #1d3c6a;
+        height: 128px;
+    }
+    .img-card-main {
+        height: 35vh;
+        background-image: url("../img/business-district.jpg");
+        background-size: cover;
+        .card {
+            background-color: rgba(0,0,0,.25) !important;
+            color: #e1e1e1;
+            margin: 0 auto;
+            margin: 3em 1em 1em 1em;
+        }
+    }
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+    .container-fluid.gray {
+        background-color: #f1f1f1;
+    }
+    .content.footer {
+        color: #aaa;
+    }
+    .footer {
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+        }
+    }
+    .row.gallery {
+        padding: 1em 0;
+        font-style: italic;
+    }
+    h2.section-header {
+        color: #1d3c6a;
+        font-size: 150%;
+    }
+    @media screen and (max-width: 991px) {
+        .navbar {
+            margin-top: .5em;
+        }
+        .navbar-brand {
+            font-size: 150%;
+        }
+        .nav-logo {
+            height: 75px;
+        }
+        .navbar-nav {
+            .nav-link {
+                padding: .75em;
+                font-size: 1.5em;
+            }
+        }
+        .top-container {
+            min-height: 70px;
+            height: auto;
+        }
+        .img-card-main {
+            height: 18vh;
+            .card {
+                margin: 0 auto;
+                margin-top: 3vh;
+            }
+        }
+    }
+    

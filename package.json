@@ -10,6 +10,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@idahoedokpayi/gatsby-theme-corporate-homepage": "file:../BasicLandingPage/themes/corporate-homepage",
     "@types/jest": "^25.1.1",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
@@ -27,7 +28,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "ts-jest": "^25.2.0",
+    "ts-jest": "^25.4.0",
     "typescript": "^3.7.5"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gatsby-plugin-eslint": "^2.0.8",
     "prettier": "^1.19.1"
   },
   "keywords": [
